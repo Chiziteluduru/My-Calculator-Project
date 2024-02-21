@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div class="showcase">
+                    <input type="text" name="showcase">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="showcase.value = ''">
+                    <input type="button" value="DE" onclick="showcase.value = showcase.value.slice(0,-1)">
+                    <input type="button" value="." onclick="showcase.value += '.'">
+                    <input type="button" value="/" onclick="showcase.value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="showcase.value += 7">
+                    <input type="button" value="8" onclick="showcase.value += 8">
+                    <input type="button" value="9" onclick="showcase.value += 9">
+                    <input type="button" value="*" onclick="showcase.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="showcase.value += 4">
+                    <input type="button" value="5" onclick="showcase.value += 5">
+                    <input type="button" value="6" onclick="showcase.value += 6">
+                    <input type="button" value="-" onclick="showcase.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="showcase.value += 1">
+                    <input type="button" value="2" onclick="showcase.value += 2">
+                    <input type="button" value="3" onclick="showcase.value += 3">
+                    <input type="button" value="+" onclick="showcase.value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="showcase.value += '00'">
+                    <input type="button" value="0" onclick="showcase.value += 0">
+                    <input type="button" value="=" class="equal" onclick="showcase.value = eval(showcase.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
